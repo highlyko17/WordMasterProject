@@ -6,6 +6,18 @@ public class Word {
     private String word;
     private String meaning;
 
+    @Override
+    public String toString() {
+        String slevel = "";
+        for(int i = 0; i < level; i++) slevel += "*";
+        String str = String.format("%-3s", slevel)
+                + String.format("%15s", word)
+                + "  "
+                + meaning;
+
+        return str;
+    }
+
     Word(){}
     Word(int id, int level, String word, String meaning){
         this.id = id;
