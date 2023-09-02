@@ -16,7 +16,7 @@ public class WordManager {
             if(menu == 0) break;
             if(menu == 4) {
                 // create
-                wordCRUD.addWord();
+                wordCRUD.addItem();
             }
             else if(menu == 1){
                 // list
@@ -28,7 +28,7 @@ public class WordManager {
             }
             else if(menu == 6){
                 // delete
-                wordCRUD.listAll();
+                wordCRUD.deleteItem();
             }
         }
     }
