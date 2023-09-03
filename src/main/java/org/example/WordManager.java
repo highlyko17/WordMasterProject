@@ -32,6 +32,10 @@ public class WordManager {
                 // delete
                 wordCRUD.deleteItem();
             }
+            else if(menu == 7){
+                // save
+                wordCRUD.saveFile();
+            }
         }
     }
 
