@@ -36,6 +36,14 @@ public class WordManager {
                 // save
                 wordCRUD.saveFile();
             }
+            else if(menu == 2){
+                // search by level
+                wordCRUD.searchLevel();
+            }
+            else if(menu == 3){
+                // search
+                wordCRUD.searchWord();
+            }
         }
     }
 
